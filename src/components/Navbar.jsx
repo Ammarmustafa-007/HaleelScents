@@ -247,8 +247,8 @@ export const Navbar = () => {
 
         <div className="flex justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
           <Link to="/" className="group flex items-center gap-3 pointer-events-auto">
-            <div className="h-16 w-16 rounded-full overflow-hidden bg-[#222222] border border-[#f472b6]/30 shadow-[0_0_30px_rgba(244,114,182,0.15)] transition duration-300 group-hover:border-[#f472b6] flex items-center justify-center shrink-0">
-              <img className="w-full h-full object-contain scale-[1.3]" src={brand.logo} alt={brand.name} />
+            <div className="h-16 w-16 rounded-full overflow-hidden bg-[#181818] border border-[#f472b6]/30 shadow-[0_0_30px_rgba(244,114,182,0.15)] transition duration-300 group-hover:border-[#f472b6] flex items-center justify-center shrink-0">
+              <img className="w-full h-full object-cover scale-[1.35] -translate-y-[6px]" src={brand.logo} alt={brand.name} />
             </div>
             <span className="hidden flex-col leading-none sm:flex">
               <span className="text-lg font-semibold text-gold-soft">HALEEL</span>
