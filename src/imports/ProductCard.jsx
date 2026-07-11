@@ -70,31 +70,26 @@ export const ProductCard = ({
               <X size={20} />
             </button>
 
-            <div className="flex flex-col md:flex-row">
-              <div className="flex h-48 w-full items-center justify-center bg-[#0b0a08] p-4 md:h-auto md:w-2/5 md:border-r md:border-[#d7b46a]/20">
-                <img src={photo} alt={name} className="h-full w-full object-contain drop-shadow-2xl" />
-              </div>
-              <div className="w-full p-6 md:w-3/5">
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#d7b46a]">{category}</p>
-                <h3 className="mt-1 font-serif text-2xl font-bold text-[#fff8e8]">{name}</h3>
-                
-                <div className="mt-6 space-y-4 text-sm">
-                  <div className="border-b border-[#d7b46a]/10 pb-3">
-                    <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Gender</p>
-                    <p className="mt-1 text-[#fff8e8]/90">{gender || "Signature"}</p>
-                  </div>
-                  <div className="border-b border-[#d7b46a]/10 pb-3">
-                    <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Occasion</p>
-                    <p className="mt-1 text-[#fff8e8]/90">{occasion || "Everyday luxury"}</p>
-                  </div>
-                  <div className="border-b border-[#d7b46a]/10 pb-3">
-                    <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Notes</p>
-                    <p className="mt-1 text-[#fff8e8]/90 leading-relaxed">{notes || "Warm, polished, memorable"}</p>
-                  </div>
-                  <div>
-                    <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Accords</p>
-                    <p className="mt-1 text-[#fff8e8]/90 leading-relaxed">{accords || "Premium blend"}</p>
-                  </div>
+            <div className="p-6 md:p-8">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#d7b46a]">{category || "Haleel"}</p>
+              <h3 className="mt-1 font-serif text-2xl font-bold text-[#fff8e8]">{name}</h3>
+              
+              <div className="mt-6 space-y-4 text-sm">
+                <div className="border-b border-[#d7b46a]/10 pb-3">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Gender</p>
+                  <p className="mt-1 text-[#fff8e8]/90">{gender || "Signature"}</p>
+                </div>
+                <div className="border-b border-[#d7b46a]/10 pb-3">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Occasion</p>
+                  <p className="mt-1 text-[#fff8e8]/90">{occasion || "Everyday luxury"}</p>
+                </div>
+                <div className="border-b border-[#d7b46a]/10 pb-3">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Notes</p>
+                  <p className="mt-1 text-[#fff8e8]/90 leading-relaxed">{notes || "Warm, polished, memorable"}</p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Accords</p>
+                  <p className="mt-1 text-[#fff8e8]/90 leading-relaxed">{accords || "Premium blend"}</p>
                 </div>
               </div>
             </div>
