@@ -14,16 +14,16 @@ export const Footer = () => {
 
         <div>
           <h3 className="text-xl font-serif font-semibold text-gold-soft">Contact</h3>
-          <p className="mt-4 text-sm text-ivory/70">Phone: +92 300 1234567</p>
-          <p className="mt-2 text-sm text-ivory/70">Email: support@haleelscents.com</p>
+          <p className="mt-4 text-sm text-ivory/70">Phone: 03315353053</p>
+          <p className="mt-2 text-sm text-ivory/70">Email: Haleelgroups@gmail.com</p>
         </div>
 
         <div>
           <h3 className="text-xl font-serif font-semibold text-gold-soft">Follow The Trail</h3>
           <div className="mt-5 flex gap-4 text-xl">
-            <a href="#" className="grid h-11 w-11 place-items-center rounded-full border border-gold/25 transition hover:bg-gold hover:text-ink hover-lift"><FaFacebookF /></a>
-            <a href="#" className="grid h-11 w-11 place-items-center rounded-full border border-gold/25 transition hover:bg-gold hover:text-ink hover-lift"><FaInstagram /></a>
-            <a href="#" className="grid h-11 w-11 place-items-center rounded-full border border-gold/25 transition hover:bg-gold hover:text-ink hover-lift"><FaTiktok /></a>
+            <a href="https://www.facebook.com/HaleelScents/" target="_blank" rel="noreferrer" className="grid h-11 w-11 place-items-center rounded-full border border-gold/25 transition hover:bg-gold hover:text-ink hover-lift"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/haleel_scents?igsh=Znp2N3N1ZzM5dGY2" target="_blank" rel="noreferrer" className="grid h-11 w-11 place-items-center rounded-full border border-gold/25 transition hover:bg-gold hover:text-ink hover-lift"><FaInstagram /></a>
+            <a href="https://www.tiktok.com/@haleelscents?_r=1&_t=ZS-97vR5p6Sxwy" target="_blank" rel="noreferrer" className="grid h-11 w-11 place-items-center rounded-full border border-gold/25 transition hover:bg-gold hover:text-ink hover-lift"><FaTiktok /></a>
           </div>
         </div>
       </div>

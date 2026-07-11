@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { supabase } from "../supabaseClient";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import { notify } from "../components/notify";
+import { Mail, Phone, Users } from "lucide-react";
+import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
 export const Contact = () => {
   const [form, setForm] = useState({
@@ -55,7 +57,7 @@ export const Contact = () => {
         <div className="absolute w-[300px] h-[300px] bg-[#fff3cd]0/20 blur-[120px] rounded-full bottom-10 right-10"></div>
 
         <div className="text-center">
-          <h1 className="text-3xl sm:text-5xl font-bold mb-3">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-3 font-serif">
             Contact Haleel
           </h1>
           <p className="text-gray-300">
@@ -64,9 +66,30 @@ export const Contact = () => {
         </div>
       </div>
 
-      {/* FORM */}
+      {/* FORM AND INFO */}
       <div className="bg-[#0b0a08] py-16 text-[#fff8e8]">
         <Container maxWidth="md">
+          <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="bg-[#171410] border border-[#d7b46a]/20 p-6 rounded-2xl shadow-lg transition hover:border-[#d7b46a]/40">
+              <Mail className="mx-auto text-[#d7b46a] mb-4" size={28} />
+              <h3 className="text-lg font-serif font-semibold text-[#fff8e8]">Email Us</h3>
+              <p className="mt-2 text-[#fff8e8]/70 text-sm">Haleelgroups@gmail.com</p>
+            </div>
+            <div className="bg-[#171410] border border-[#d7b46a]/20 p-6 rounded-2xl shadow-lg transition hover:border-[#d7b46a]/40">
+              <Phone className="mx-auto text-[#d7b46a] mb-4" size={28} />
+              <h3 className="text-lg font-serif font-semibold text-[#fff8e8]">Call Us</h3>
+              <p className="mt-2 text-[#fff8e8]/70 text-sm">03315353053</p>
+            </div>
+            <div className="bg-[#171410] border border-[#d7b46a]/20 p-6 rounded-2xl shadow-lg transition hover:border-[#d7b46a]/40">
+              <Users className="mx-auto text-[#d7b46a] mb-4" size={28} />
+              <h3 className="text-lg font-serif font-semibold text-[#fff8e8]">Follow The Trail</h3>
+              <div className="mt-4 flex justify-center gap-5 text-lg">
+                 <a href="https://www.facebook.com/HaleelScents/" target="_blank" rel="noreferrer" className="text-[#fff8e8]/70 hover:text-[#d7b46a] transition hover:scale-110"><FaFacebookF /></a>
+                 <a href="https://www.instagram.com/haleel_scents?igsh=Znp2N3N1ZzM5dGY2" target="_blank" rel="noreferrer" className="text-[#fff8e8]/70 hover:text-[#d7b46a] transition hover:scale-110"><FaInstagram /></a>
+                 <a href="https://www.tiktok.com/@haleelscents?_r=1&_t=ZS-97vR5p6Sxwy" target="_blank" rel="noreferrer" className="text-[#fff8e8]/70 hover:text-[#d7b46a] transition hover:scale-110"><FaTiktok /></a>
+              </div>
+            </div>
+          </div>
           <div className="bg-[#171410] border border-[#d7b46a]/20 p-10 rounded-3xl shadow-2xl">
 
             <Typography variant="h4" fontWeight="bold" mb={5} textAlign="center" color="#d7b46a">
