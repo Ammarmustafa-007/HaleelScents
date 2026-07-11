@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { notify } from "../components/notify";
 import { brand } from "../brand";
 
-const ADMIN_EMAIL = "admin@scentforest.com";
-const ADMIN_PASSWORD = "ammar123";
+const ADMIN_EMAIL = "admin@haleelscents.com";
+const ADMIN_PASSWORD = "abrar123";
 const ADMIN_SESSION_KEY = "haleelscents_admin";
 
 export default function AdminLogin() {
