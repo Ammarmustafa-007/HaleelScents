@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="border-t border-gold/20 bg-ink px-6 pt-16 text-ivory">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
         <div>
-          <img className="h-20 w-20 rounded-full object-cover" src={brand.logo} alt={brand.name} />
+          <img className="h-24 w-24 rounded-full object-contain bg-[#222222] border border-[#f472b6]/30 shadow-md" src={brand.logo} alt={brand.name} />
           <h3 className="mt-4 text-xl font-serif font-semibold text-gold-soft">{brand.name}</h3>
           <p className="mt-3 text-sm leading-6 text-ivory/70">{brand.description}</p>
         </div>

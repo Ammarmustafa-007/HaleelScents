@@ -79,7 +79,7 @@ const fetchProducts = async () => {
 
         <button
           onClick={() => navigate("/admin/products/add")}
-          className="bg-[#a86b3c] hover:bg-[#8f5832] text-white px-6 py-3 rounded-lg"
+          className="bg-[#db2777] hover:bg-[#8f5832] text-white px-6 py-3 rounded-lg"
         >
           Add Product
         </button>
@@ -104,7 +104,7 @@ const fetchProducts = async () => {
           <button
             type="button"
             onClick={() => navigate("/admin/products/add")}
-            className="mt-6 rounded-md bg-[#a86b3c] px-5 py-2 text-white transition hover:bg-[#8f5832]"
+            className="mt-6 rounded-md bg-[#db2777] px-5 py-2 text-white transition hover:bg-[#8f5832]"
           >
             Add Product
           </button>

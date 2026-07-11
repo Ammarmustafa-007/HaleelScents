@@ -70,7 +70,7 @@ export const Admindash = () => {
   }, []);
 
   const stats = [
-    { title: "Total Sales", value: formatCurrency(dashboard.totalSales), icon: <AttachMoneyIcon sx={{ fontSize: 40, color: "#d7b46a" }} /> },
+    { title: "Total Sales", value: formatCurrency(dashboard.totalSales), icon: <AttachMoneyIcon sx={{ fontSize: 40, color: "#f472b6" }} /> },
     { title: "Total Orders", value: dashboard.totalOrders, icon: <ShoppingCartIcon sx={{ fontSize: 40, color: "blue" }} /> },
     { title: "Pending Orders", value: dashboard.pendingOrders, icon: <PendingActionsIcon sx={{ fontSize: 40, color: "orange" }} /> },
     { title: "Catalogue Items", value: dashboard.catalogueItems, icon: <InventoryIcon sx={{ fontSize: 40, color: "purple" }} /> },

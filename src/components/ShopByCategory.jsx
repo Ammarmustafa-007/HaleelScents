@@ -10,10 +10,10 @@ export const ShopByCategory = () => {
   ];
 
   return (
-    <section className="bg-[#0b0a08] px-4 py-18">
+    <section className="bg-[#fff0f5] px-4 py-18">
       <div className="mx-auto max-w-7xl">
-        <p className="text-center text-xs font-semibold uppercase tracking-[0.32em] text-[#d7b46a]">Choose your aura</p>
-        <h2 className="mt-3 text-center text-3xl font-semibold text-[#fff8e8] md:text-5xl">
+        <p className="text-center text-xs font-semibold uppercase tracking-[0.32em] text-[#f472b6]">Choose your aura</p>
+        <h2 className="mt-3 text-center text-3xl font-semibold text-[#4c1d95] md:text-5xl">
           Shop By Category
         </h2>
 
@@ -23,14 +23,14 @@ export const ShopByCategory = () => {
               key={cat.name}
               type="button"
               onClick={() => navigate(cat.path)}
-              className="group relative overflow-hidden rounded-lg border border-[#d7b46a]/18 text-left shadow-2xl"
+              className="group relative overflow-hidden rounded-lg border border-[#f472b6]/18 text-left shadow-2xl"
             >
               <img src={cat.image} alt={cat.name} className="h-[360px] w-full object-cover transition duration-700 group-hover:scale-110 md:h-[480px]" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0b0a08] via-[#0b0a08]/35 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#fff0f5] via-[#fff0f5]/35 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <div className="flex items-center justify-between border-t border-[#d7b46a]/25 pt-5">
-                  <span className="text-2xl font-semibold text-[#fff8e8]">{cat.name}</span>
-                  <span className="grid h-11 w-11 place-items-center rounded-full bg-[#d7b46a] text-[#0b0a08] transition group-hover:translate-x-1">
+                <div className="flex items-center justify-between border-t border-[#f472b6]/25 pt-5">
+                  <span className="text-2xl font-semibold text-[#4c1d95]">{cat.name}</span>
+                  <span className="grid h-11 w-11 place-items-center rounded-full bg-[#f472b6] text-[#fff0f5] transition group-hover:translate-x-1">
                     <FiArrowRight />
                   </span>
                 </div>

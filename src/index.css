@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --haleel-ink: #0b0a08;
-  --haleel-charcoal: #171410;
-  --haleel-panel: #211d17;
-  --haleel-gold: #d7b46a;
-  --haleel-gold-soft: #f4df9e;
-  --haleel-copper: #a86b3c;
-  --haleel-ivory: #fff8e8;
+  --haleel-ink: #fdf2f8;
+  --haleel-charcoal: #ffffff;
+  --haleel-panel: #fbcfe8;
+  --haleel-gold: #f472b6;
+  --haleel-gold-soft: #fce7f3;
+  --haleel-copper: #ec4899;
+  --haleel-ivory: #4c1d95;
 
   --space-1: 4px;
   --space-2: 8px;
@@ -36,9 +36,9 @@
   --z-toast: 500;
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-gold: 0 16px 36px rgba(215, 180, 106, 0.24);
+  --shadow-md: 0 4px 6px -1px rgba(244, 114, 182, 0.1), 0 2px 4px -1px rgba(244, 114, 182, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(244, 114, 182, 0.1), 0 4px 6px -2px rgba(244, 114, 182, 0.05);
+  --shadow-gold: 0 16px 36px rgba(244, 114, 182, 0.25);
 }
 
 html {
@@ -50,9 +50,9 @@ body {
   margin: 0;
   color: var(--haleel-ivory);
   background:
-    radial-gradient(circle at 12% 8%, rgba(215, 180, 106, 0.14), transparent 34rem),
-    radial-gradient(circle at 82% 12%, rgba(168, 107, 60, 0.12), transparent 30rem),
-    linear-gradient(135deg, #0b0a08 0%, #171410 45%, #28231d 100%);
+    radial-gradient(circle at 12% 8%, rgba(244, 114, 182, 0.15), transparent 34rem),
+    radial-gradient(circle at 82% 12%, rgba(236, 72, 153, 0.12), transparent 30rem),
+    linear-gradient(135deg, #fdf2f8 0%, #ffffff 45%, #fce7f3 100%);
 }
 
 img {
@@ -71,15 +71,15 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.26;
+  opacity: 0.6;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    linear-gradient(rgba(244, 114, 182, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 114, 182, 0.08) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
 ::selection {
-  color: #0b0a08;
+  color: #ffffff;
   background: var(--haleel-gold);
 }
 
@@ -101,11 +101,11 @@ body::before {
 @keyframes goldPulse {
   0%, 100% {
     transform: scale(1);
-    filter: drop-shadow(0 0 0 rgba(215, 180, 106, 0.25));
+    filter: drop-shadow(0 0 0 rgba(244, 114, 182, 0.25));
   }
   45% {
     transform: scale(1.075);
-    filter: drop-shadow(0 0 24px rgba(215, 180, 106, 0.7));
+    filter: drop-shadow(0 0 24px rgba(244, 114, 182, 0.6));
   }
 }
 
@@ -132,10 +132,10 @@ body::before {
   width: 184px;
   height: 184px;
   border-radius: 999px;
-  border: 1px solid rgba(215, 180, 106, 0.35);
+  border: 1px solid rgba(244, 114, 182, 0.35);
   background:
-    conic-gradient(from 90deg, transparent, rgba(215, 180, 106, 0.5), transparent 42%),
-    radial-gradient(circle, rgba(215, 180, 106, 0.12), transparent 60%);
+    conic-gradient(from 90deg, transparent, rgba(244, 114, 182, 0.5), transparent 42%),
+    radial-gradient(circle, rgba(244, 114, 182, 0.12), transparent 60%);
   animation: softOrbit 2.4s linear infinite;
 }
 
@@ -147,8 +147,8 @@ body::before {
   height: 132px;
   border-radius: 999px;
   overflow: hidden;
-  background: #171410;
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(215, 180, 106, 0.3);
+  background: #ffffff;
+  box-shadow: 0 20px 80px rgba(244, 114, 182, 0.3), inset 0 0 0 1px rgba(244, 114, 182, 0.3);
   animation: goldPulse 1.18s ease-in-out infinite;
 }
 
@@ -170,10 +170,10 @@ body::before {
 
 .haleel-surface {
   background:
-    linear-gradient(145deg, rgba(255, 248, 232, 0.08), rgba(255, 248, 232, 0.025)),
-    rgba(19, 17, 14, 0.86);
-  border: 1px solid rgba(215, 180, 106, 0.18);
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)),
+    rgba(253, 242, 248, 0.86);
+  border: 1px solid rgba(244, 114, 182, 0.3);
+  box-shadow: 0 24px 70px rgba(244, 114, 182, 0.15);
   backdrop-filter: blur(18px);
 }
 
@@ -182,9 +182,9 @@ body::before {
 }
 
 .haleel-gold-button {
-  color: #130f08;
-  background: linear-gradient(135deg, #f7e7ad 0%, #d7b46a 48%, #a86b3c 100%);
-  box-shadow: 0 16px 36px rgba(215, 180, 106, 0.24);
+  color: #ffffff;
+  background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 48%, #db2777 100%);
+  box-shadow: 0 16px 36px rgba(244, 114, 182, 0.3);
 }
 
 .haleel-gold-button:hover {
@@ -231,7 +231,6 @@ body::before {
   }
 }
 
-
 .haleel-loader-fullscreen {
   min-height: 100vh;
 }
@@ -244,9 +243,9 @@ body::before {
   border-radius: 999px;
   overflow: hidden;
   flex: 0 0 auto;
-  background: #171410;
-  border: 1px solid rgba(215, 180, 106, 0.32);
-  box-shadow: 0 0 34px rgba(215, 180, 106, 0.16);
+  background: #ffffff;
+  border: 1px solid rgba(244, 114, 182, 0.4);
+  box-shadow: 0 0 34px rgba(244, 114, 182, 0.25);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -259,7 +258,7 @@ body::before {
 }
 
 .group:hover .haleel-logo-orb {
-  border-color: rgba(244, 223, 158, 0.55);
+  border-color: rgba(236, 72, 153, 0.6);
   transform: scale(1.05);
 }
 
@@ -300,7 +299,7 @@ body::before {
 }
 
 .glass-panel {
-  background: rgba(23, 20, 16, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(215, 180, 106, 0.1);
+  border: 1px solid rgba(244, 114, 182, 0.2);
 }

@@ -121,7 +121,7 @@ export const Navbar = () => {
     `relative transition duration-300 hover:text-gold-soft ${isActive ? "text-gold-soft" : "text-ivory"}`;
 
   return (
-    <header className="sticky top-0 z-[9999] border-b border-[#d7b46a]/20 bg-[#0b0a08] text-[#fff8e8] shadow-lg w-full">
+    <header className="sticky top-0 z-[9999] border-b border-[#f472b6]/20 bg-[#fff0f5] text-[#4c1d95] shadow-lg w-full">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-7 sm:px-6 relative">
         <div className="flex flex-1 items-center justify-start">
           <nav className="hidden lg:block">
@@ -179,15 +179,15 @@ export const Navbar = () => {
         {createPortal(
           <div className={`fixed inset-0 z-[100000] lg:hidden ${menuOpen ? "pointer-events-auto" : "pointer-events-none"}`}>
             <div 
-              className={`absolute inset-0 bg-[#0b0a08]/80 backdrop-blur-sm transition-opacity duration-300 ${menuOpen ? "opacity-100" : "opacity-0"}`} 
+              className={`absolute inset-0 bg-[#fff0f5]/80 backdrop-blur-sm transition-opacity duration-300 ${menuOpen ? "opacity-100" : "opacity-0"}`} 
               onClick={() => setMenuOpen(false)}
             />
             <div
-              className={`absolute left-0 top-0 flex h-full w-72 flex-col border-r border-[#d7b46a]/20 bg-[#0b0a08] shadow-[20px_0_50px_rgba(0,0,0,0.5)] transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
+              className={`absolute left-0 top-0 flex h-full w-72 flex-col border-r border-[#f472b6]/20 bg-[#fff0f5] shadow-[20px_0_50px_rgba(0,0,0,0.5)] transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
             >
-              <div className="flex items-center justify-between border-b border-[#d7b46a]/20 p-6">
-                <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#d7b46a]">Menu</span>
-                <button onClick={() => setMenuOpen(false)} className="text-[#fff8e8] transition hover:text-[#d7b46a]">
+              <div className="flex items-center justify-between border-b border-[#f472b6]/20 p-6">
+                <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#f472b6]">Menu</span>
+                <button onClick={() => setMenuOpen(false)} className="text-[#4c1d95] transition hover:text-[#f472b6]">
                   <X size={24} />
                 </button>
               </div>
@@ -200,7 +200,7 @@ export const Navbar = () => {
                           to={item.path}
                           onClick={() => setMenuOpen(false)}
                           className={({ isActive }) =>
-                            `block rounded-md px-3 py-2 transition ${isActive ? "bg-[#d7b46a]/10 text-[#d7b46a]" : "text-[#fff8e8]"}`
+                            `block rounded-md px-3 py-2 transition ${isActive ? "bg-[#f472b6]/10 text-[#f472b6]" : "text-[#4c1d95]"}`
                           }
                         >
                           {item.name}
@@ -210,7 +210,7 @@ export const Navbar = () => {
                       <li key={item.name}>
                         <button
                           onClick={() => setMobileOpen((prev) => !prev)}
-                          className="flex w-full items-center justify-between rounded-md px-3 py-2 text-[#fff8e8]"
+                          className="flex w-full items-center justify-between rounded-md px-3 py-2 text-[#4c1d95]"
                         >
                           {item.name}
                           {mobileOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
@@ -226,7 +226,7 @@ export const Navbar = () => {
                                     setMenuOpen(false);
                                   }}
                                   className={({ isActive }) =>
-                                    `block rounded-md px-4 py-2 text-sm ${isActive ? "text-[#d7b46a]" : "text-[#fff8e8]/70"}`
+                                    `block rounded-md px-4 py-2 text-sm ${isActive ? "text-[#f472b6]" : "text-[#4c1d95]/70"}`
                                   }
                                 >
                                   {sub.category}
@@ -247,7 +247,9 @@ export const Navbar = () => {
 
         <div className="flex justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
           <Link to="/" className="group flex items-center gap-3 pointer-events-auto">
-            <img className="h-20 w-20 rounded-full object-cover border border-[#d7b46a]/30 shadow-[0_0_30px_rgba(215,180,106,0.15)] transition duration-300 group-hover:border-[#d7b46a]" src={brand.logo} alt={brand.name} />
+            <div className="h-16 w-16 rounded-full overflow-hidden bg-[#222222] border border-[#f472b6]/30 shadow-[0_0_30px_rgba(244,114,182,0.15)] transition duration-300 group-hover:border-[#f472b6] flex items-center justify-center shrink-0">
+              <img className="w-full h-full object-contain scale-[1.3]" src={brand.logo} alt={brand.name} />
+            </div>
             <span className="hidden flex-col leading-none sm:flex">
               <span className="text-lg font-semibold text-gold-soft">HALEEL</span>
               <span className="mt-1 text-[10px] uppercase text-gold/70">Scents</span>
@@ -288,7 +290,7 @@ export const Navbar = () => {
                         navigate("/profile");
                         setShowLocation(false);
                       }}
-                      className="rounded-md border border-gold/30 px-3 py-2 text-sm text-gold-soft transition hover:bg-gold/10"
+                      className="rounded-md border border-[#f472b6]/30 px-3 py-2 text-sm text-[#db2777] font-medium transition hover:bg-[#fce7f3]"
                     >
                       View Profile
                     </button>
@@ -305,7 +307,7 @@ export const Navbar = () => {
                     )}
                     <button
                       onClick={signOut}
-                      className="rounded-md bg-red-600/90 px-3 py-2 text-sm text-white transition hover:bg-red-700"
+                      className="rounded-md bg-[#db2777] px-3 py-2 text-sm font-semibold text-white transition hover:bg-[#be185d]"
                     >
                       Logout
                     </button>
@@ -325,7 +327,7 @@ export const Navbar = () => {
             aria-label="Open cart"
           >
             <IoCartOutline className="h-7 w-7" />
-            <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-gold px-1 text-xs font-bold text-ink">
+            <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#f472b6] px-1 text-xs font-bold text-white shadow-sm">
               {itemCount}
             </span>
           </Link>

@@ -11,9 +11,9 @@ const styles = {
   success: {
     icon: CheckCircle2,
     title: "Success",
-    ring: "ring-[#d7b46a]/20",
-    iconBg: "bg-[#fff3cd] text-[#a86b3c]",
-    bar: "bg-[#fff3cd]0",
+    ring: "ring-[#f472b6]/20",
+    iconBg: "bg-[#fce7f3] text-[#db2777]",
+    bar: "bg-[#f472b6]",
   },
   error: {
     icon: AlertCircle,
@@ -54,14 +54,14 @@ const NotificationCard = ({ type = "info", title, message }) => {
         </div>
 
         <div className="min-w-0 pt-0.5">
-          <p className="text-sm font-semibold text-[#171410]">
+          <p className="text-sm font-semibold text-[#db2777]">
             {title || style.title}
           </p>
-          <p className="mt-1 text-sm leading-5 text-[#5f5544]">{message}</p>
+          <p className="mt-1 text-sm leading-5 text-[#4c1d95]">{message}</p>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 h-1 w-full bg-[#f2e6c7]">
+      <div className="absolute bottom-0 left-0 h-1 w-full bg-[#fbcfe8]">
         <div className={`h-full notification-progress ${style.bar}`} />
       </div>
     </div>
@@ -96,7 +96,7 @@ export const notify = {
               <Trash2 size={21} strokeWidth={2.4} />
             </div>
             <div className="min-w-0">
-              <p className="text-sm font-semibold text-[#171410]">
+              <p className="text-sm font-semibold text-[#ffffff]">
                 Delete item?
               </p>
               <p className="mt-1 text-sm leading-5 text-[#5f5544]">
@@ -109,7 +109,7 @@ export const notify = {
             <button
               type="button"
               onClick={closeToast}
-              className="rounded-md border border-[#d7b46a]/30 px-3 py-2 text-sm font-medium text-[#171410] transition hover:bg-[#fff3cd]"
+              className="rounded-md border border-[#f472b6]/30 px-3 py-2 text-sm font-medium text-[#ffffff] transition hover:bg-[#fff3cd]"
             >
               Cancel
             </button>

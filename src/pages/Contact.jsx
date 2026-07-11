@@ -52,8 +52,8 @@ export const Contact = () => {
       <Navbar />
 
       {/* HERO */}
-      <div className="relative h-[55vh] flex items-center justify-center bg-[linear-gradient(135deg,#0b0a08,#211d17)] text-white">
-        <div className="absolute w-[300px] h-[300px] bg-[#d7b46a]/15 blur-[120px] rounded-full top-10 left-10"></div>
+      <div className="relative h-[55vh] flex items-center justify-center bg-[linear-gradient(135deg,#fff0f5,#ffffff)] text-white">
+        <div className="absolute w-[300px] h-[300px] bg-[#f472b6]/15 blur-[120px] rounded-full top-10 left-10"></div>
         <div className="absolute w-[300px] h-[300px] bg-[#fff3cd]0/20 blur-[120px] rounded-full bottom-10 right-10"></div>
 
         <div className="text-center">
@@ -67,32 +67,32 @@ export const Contact = () => {
       </div>
 
       {/* FORM AND INFO */}
-      <div className="bg-[#0b0a08] py-16 text-[#fff8e8]">
+      <div className="bg-[#fff0f5] py-16 text-[#4c1d95]">
         <Container maxWidth="md">
           <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            <div className="bg-[#171410] border border-[#d7b46a]/20 p-6 rounded-2xl shadow-lg transition hover:border-[#d7b46a]/40">
-              <Mail className="mx-auto text-[#d7b46a] mb-4" size={28} />
-              <h3 className="text-lg font-serif font-semibold text-[#fff8e8]">Email Us</h3>
-              <p className="mt-2 text-[#fff8e8]/70 text-sm">Haleelgroups@gmail.com</p>
+            <div className="bg-[#ffffff] border border-[#f472b6]/20 p-6 rounded-2xl shadow-lg transition hover:border-[#f472b6]/40">
+              <Mail className="mx-auto text-[#f472b6] mb-4" size={28} />
+              <h3 className="text-lg font-serif font-semibold text-[#4c1d95]">Email Us</h3>
+              <p className="mt-2 text-[#4c1d95]/70 text-sm">Haleelgroups@gmail.com</p>
             </div>
-            <div className="bg-[#171410] border border-[#d7b46a]/20 p-6 rounded-2xl shadow-lg transition hover:border-[#d7b46a]/40">
-              <Phone className="mx-auto text-[#d7b46a] mb-4" size={28} />
-              <h3 className="text-lg font-serif font-semibold text-[#fff8e8]">Call Us</h3>
-              <p className="mt-2 text-[#fff8e8]/70 text-sm">03315353053</p>
+            <div className="bg-[#ffffff] border border-[#f472b6]/20 p-6 rounded-2xl shadow-lg transition hover:border-[#f472b6]/40">
+              <Phone className="mx-auto text-[#f472b6] mb-4" size={28} />
+              <h3 className="text-lg font-serif font-semibold text-[#4c1d95]">Call Us</h3>
+              <p className="mt-2 text-[#4c1d95]/70 text-sm">03315353053</p>
             </div>
-            <div className="bg-[#171410] border border-[#d7b46a]/20 p-6 rounded-2xl shadow-lg transition hover:border-[#d7b46a]/40">
-              <Users className="mx-auto text-[#d7b46a] mb-4" size={28} />
-              <h3 className="text-lg font-serif font-semibold text-[#fff8e8]">Follow The Trail</h3>
+            <div className="bg-[#ffffff] border border-[#f472b6]/20 p-6 rounded-2xl shadow-lg transition hover:border-[#f472b6]/40">
+              <Users className="mx-auto text-[#f472b6] mb-4" size={28} />
+              <h3 className="text-lg font-serif font-semibold text-[#4c1d95]">Follow The Trail</h3>
               <div className="mt-4 flex justify-center gap-5 text-lg">
-                 <a href="https://www.facebook.com/HaleelScents/" target="_blank" rel="noreferrer" className="text-[#fff8e8]/70 hover:text-[#d7b46a] transition hover:scale-110"><FaFacebookF /></a>
-                 <a href="https://www.instagram.com/haleel_scents?igsh=Znp2N3N1ZzM5dGY2" target="_blank" rel="noreferrer" className="text-[#fff8e8]/70 hover:text-[#d7b46a] transition hover:scale-110"><FaInstagram /></a>
-                 <a href="https://www.tiktok.com/@haleelscents?_r=1&_t=ZS-97vR5p6Sxwy" target="_blank" rel="noreferrer" className="text-[#fff8e8]/70 hover:text-[#d7b46a] transition hover:scale-110"><FaTiktok /></a>
+                 <a href="https://www.facebook.com/HaleelScents/" target="_blank" rel="noreferrer" className="text-[#4c1d95]/70 hover:text-[#f472b6] transition hover:scale-110"><FaFacebookF /></a>
+                 <a href="https://www.instagram.com/haleel_scents?igsh=Znp2N3N1ZzM5dGY2" target="_blank" rel="noreferrer" className="text-[#4c1d95]/70 hover:text-[#f472b6] transition hover:scale-110"><FaInstagram /></a>
+                 <a href="https://www.tiktok.com/@haleelscents?_r=1&_t=ZS-97vR5p6Sxwy" target="_blank" rel="noreferrer" className="text-[#4c1d95]/70 hover:text-[#f472b6] transition hover:scale-110"><FaTiktok /></a>
               </div>
             </div>
           </div>
-          <div className="bg-[#171410] border border-[#d7b46a]/20 p-10 rounded-3xl shadow-2xl">
+          <div className="bg-[#ffffff] border border-[#f472b6]/20 p-10 rounded-3xl shadow-2xl">
 
-            <Typography variant="h4" fontWeight="bold" mb={5} textAlign="center" color="#d7b46a">
+            <Typography variant="h4" fontWeight="bold" mb={5} textAlign="center" color="#f472b6">
               Get In Touch
             </Typography>
 
@@ -106,7 +106,7 @@ export const Contact = () => {
       placeholder="Name"
       value={form.name}
       onChange={handleChange}
-      className="w-full bg-[#0b0a08] border border-[#d7b46a]/30 px-4 py-3 outline-none focus:border-[#d7b46a] text-[#fff8e8] placeholder:text-[#fff8e8]/40 rounded-md transition"
+      className="w-full bg-[#fff0f5] border border-[#f472b6]/30 px-4 py-3 outline-none focus:border-[#f472b6] text-[#4c1d95] placeholder:text-[#4c1d95]/40 rounded-md transition"
     />
 
     <input
@@ -116,7 +116,7 @@ export const Contact = () => {
       value={form.email}
       onChange={handleChange}
       required
-      className="w-full bg-[#0b0a08] border border-[#d7b46a]/30 px-4 py-3 outline-none focus:border-[#d7b46a] text-[#fff8e8] placeholder:text-[#fff8e8]/40 rounded-md transition"
+      className="w-full bg-[#fff0f5] border border-[#f472b6]/30 px-4 py-3 outline-none focus:border-[#f472b6] text-[#4c1d95] placeholder:text-[#4c1d95]/40 rounded-md transition"
     />
   </div>
 
@@ -128,7 +128,7 @@ export const Contact = () => {
       placeholder="Phone number"
       value={form.phone}
       onChange={handleChange}
-      className="w-full bg-[#0b0a08] border border-[#d7b46a]/30 px-4 py-3 outline-none focus:border-[#d7b46a] text-[#fff8e8] placeholder:text-[#fff8e8]/40 rounded-md transition"
+      className="w-full bg-[#fff0f5] border border-[#f472b6]/30 px-4 py-3 outline-none focus:border-[#f472b6] text-[#4c1d95] placeholder:text-[#4c1d95]/40 rounded-md transition"
     />
   </div>
 
@@ -140,7 +140,7 @@ export const Contact = () => {
       placeholder="Comment"
       value={form.message}
       onChange={handleChange}
-      className="w-full bg-[#0b0a08] border border-[#d7b46a]/30 px-4 py-3 outline-none resize-none focus:border-[#d7b46a] text-[#fff8e8] placeholder:text-[#fff8e8]/40 rounded-md transition"
+      className="w-full bg-[#fff0f5] border border-[#f472b6]/30 px-4 py-3 outline-none resize-none focus:border-[#f472b6] text-[#4c1d95] placeholder:text-[#4c1d95]/40 rounded-md transition"
     />
   </div>
 

@@ -7,6 +7,8 @@ import { ProtectedRoute } from "./routes/ProtectedRoute";
 import { BrandLoader } from "./components/BrandLoader";
 import { AnimatedRoute } from "./components/AnimatedRoute";
 
+import { HeartsBackground } from "./components/HeartsBackground";
+
 const Home = React.lazy(() =>
   import("./pages/Home").then((module) => ({ default: module.Home })),
 );
@@ -73,7 +75,7 @@ const Editproductpage = React.lazy(() =>
 );
 
 const RouteLoader = () => (
-  <div className="min-h-screen bg-[#0b0a08]">
+  <div className="min-h-screen bg-[#fff0f5]">
     <BrandLoader fullscreen label="Haleel Scents is loading" />
   </div>
 );
@@ -107,6 +109,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <HeartsBackground />
       {/* <Navbar locate={loc}/> */}
       <Suspense fallback={<RouteLoader />}>
         <Routes>

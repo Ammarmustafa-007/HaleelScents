@@ -66,7 +66,7 @@ export const Adminorders = () => {
 
   return (
     <>
-      <div className="p-4 sm:p-6 bg-[#0b0a08] rounded-3xl min-h-screen fade-in-up">
+      <div className="p-4 sm:p-6 bg-[#fff0f5] rounded-3xl min-h-screen fade-in-up">
         <h1 className="text-2xl text-gray-200 font-bold mb-6 text-center mr-3">
           🧾 Customer / Order Details
         </h1>
@@ -84,7 +84,7 @@ export const Adminorders = () => {
             <div className="overflow-x-auto rounded-2xl">
               <table className="w-full border-collapse text-sm sm:text-base">
                 <thead>
-                  <tr className="bg-[#211d17] text-gray-200 uppercase text-sm">
+                  <tr className="bg-[#ffffff] text-gray-200 uppercase text-sm">
                     <th className="p-3 text-left">ID</th>
                     <th className="p-3 text-left">Name</th>
                     <th className="p-3 text-left">Time</th>
@@ -109,7 +109,7 @@ export const Adminorders = () => {
                             {/* 👁️ Show / Hide Details Button */}
                             <button
                               onClick={() => handleShowDetails(order.id)}
-                              className="bg-[#a86b3c] cursor-pointer text-white px-3 py-1 rounded hover:bg-[#8f5832] transition w-full sm:w-auto flex items-center justify-center gap-1"
+                              className="bg-[#db2777] cursor-pointer text-white px-3 py-1 rounded hover:bg-[#8f5832] transition w-full sm:w-auto flex items-center justify-center gap-1"
                               title={
                                 selectedOrderId === order.id
                                   ? "Hide Details"

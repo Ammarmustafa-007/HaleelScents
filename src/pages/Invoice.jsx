@@ -44,7 +44,7 @@ export const Invoice = () => {
               Date: {new Date(order.created_at).toLocaleString()}
             </p>
           </div>
-          <img src="/haleel-logo.png" alt="Logo" className="h-16 sm:h-20 rounded-md" />
+          <img src="/haleel-logo.png" alt="Logo" className="h-16 w-16 sm:h-20 sm:w-20 object-cover rounded-xl shadow-sm border border-gray-100" />
         </div>
 
         {/* Billing Info */}
@@ -115,7 +115,7 @@ export const Invoice = () => {
       <div className="flex justify-center mt-6">
         <Link
           to="/"
-          className="bg-[#0b0a08] text-white px-6 py-2 rounded-md shadow-md hover:bg-[#211d17] transition"
+          className="bg-[#fff0f5] text-[#4c1d95] font-semibold px-6 py-2 rounded-md shadow-md hover:bg-[#ffffff] transition"
         >
           Back to Home
         </Link>

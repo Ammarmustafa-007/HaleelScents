@@ -54,47 +54,47 @@ export const ProductCard = ({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setShowDetails(false)}
-            className="absolute inset-0 bg-[#0b0a08]/90 backdrop-blur-md"
+            className="absolute inset-0 bg-[#fff0f5]/90 backdrop-blur-md"
           />
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-[#d7b46a]/30 bg-gradient-to-b from-[#171410] to-[#0b0a08] shadow-[0_0_50px_rgba(215,180,106,0.15)]"
+            className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-[#f472b6]/30 bg-gradient-to-b from-[#ffffff] to-[#fff0f5] shadow-[0_0_50px_rgba(215,180,106,0.15)]"
           >
             <button
               onClick={() => setShowDetails(false)}
-              className="absolute right-4 top-4 z-10 rounded-full bg-[#0b0a08]/50 p-2 text-[#fff8e8] backdrop-blur-sm transition hover:bg-[#d7b46a]/20 hover:text-[#d7b46a]"
+              className="absolute right-4 top-4 z-10 rounded-full bg-[#fff0f5]/50 p-2 text-[#4c1d95] backdrop-blur-sm transition hover:bg-[#f472b6]/20 hover:text-[#f472b6]"
             >
               <X size={20} />
             </button>
 
             <div className="p-6 md:p-8">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#d7b46a]">{category || "Haleel"}</p>
-              <h3 className="mt-1 font-serif text-2xl font-bold text-[#fff8e8]">{name}</h3>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#f472b6]">{category || "Haleel"}</p>
+              <h3 className="mt-1 font-serif text-2xl font-bold text-[#4c1d95]">{name}</h3>
               
               <div className="mt-6 space-y-4 text-sm">
-                <div className="border-b border-[#d7b46a]/10 pb-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Gender</p>
-                  <p className="mt-1 text-[#fff8e8]/90">{gender || "Signature"}</p>
+                <div className="border-b border-[#f472b6]/10 pb-3">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#f472b6]/70">Gender</p>
+                  <p className="mt-1 text-[#4c1d95]/90">{gender || "Signature"}</p>
                 </div>
-                <div className="border-b border-[#d7b46a]/10 pb-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Occasion</p>
-                  <p className="mt-1 text-[#fff8e8]/90">{occasion || "Everyday luxury"}</p>
+                <div className="border-b border-[#f472b6]/10 pb-3">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#f472b6]/70">Occasion</p>
+                  <p className="mt-1 text-[#4c1d95]/90">{occasion || "Everyday luxury"}</p>
                 </div>
-                <div className="border-b border-[#d7b46a]/10 pb-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Notes</p>
-                  <p className="mt-1 text-[#fff8e8]/90 leading-relaxed">{notes || "Warm, polished, memorable"}</p>
+                <div className="border-b border-[#f472b6]/10 pb-3">
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#f472b6]/70">Notes</p>
+                  <p className="mt-1 text-[#4c1d95]/90 leading-relaxed">{notes || "Warm, polished, memorable"}</p>
                 </div>
                 <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d7b46a]/70">Accords</p>
-                  <p className="mt-1 text-[#fff8e8]/90 leading-relaxed">{accords || "Premium blend"}</p>
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-[#f472b6]/70">Accords</p>
+                  <p className="mt-1 text-[#4c1d95]/90 leading-relaxed">{accords || "Premium blend"}</p>
                 </div>
               </div>
             </div>
             
-            <div className="bg-[#0b0a08] p-4 border-t border-[#d7b46a]/20">
+            <div className="bg-[#fff0f5] p-4 border-t border-[#f472b6]/20">
                <button
                   className="haleel-gold-button flex h-12 w-full items-center justify-center rounded-md text-sm font-bold uppercase tracking-[0.14em] transition disabled:cursor-not-allowed disabled:opacity-70"
                   onClick={(e) => {
@@ -121,26 +121,26 @@ export const ProductCard = ({
 
   return (
     <>
-      <article className="group relative mx-auto my-3 flex h-full w-full max-w-[360px] flex-col overflow-hidden rounded-lg border border-[#d7b46a]/20 bg-[#0b0a08] text-[#fff8e8] shadow-lg transition duration-500 hover:border-[#d7b46a]/45 hover-lift">
-        <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[#d7b46a]/70 to-transparent" />
+      <article className="group relative mx-auto my-3 flex h-full w-full max-w-[360px] flex-col overflow-hidden rounded-lg border border-[#f472b6]/20 bg-[#fff0f5] text-[#4c1d95] shadow-lg transition duration-500 hover:border-[#f472b6]/45 hover-lift">
+        <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[#f472b6]/70 to-transparent" />
 
-        <div className="relative m-3 h-[280px] shrink-0 overflow-hidden rounded-md bg-[#171410]">
+        <div className="relative m-3 h-[280px] shrink-0 overflow-hidden rounded-md bg-[#ffffff]">
           <img className="h-full w-full object-contain p-4 transition duration-700 group-hover:scale-105" src={photo} alt={name} />
-          <span className="absolute left-3 top-3 rounded-full border border-[#d7b46a]/30 bg-[#0b0a08]/70 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-[#d7b46a] backdrop-blur-md">
+          <span className="absolute left-3 top-3 rounded-full border border-[#f472b6]/30 bg-[#fff0f5]/70 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-[#f472b6] backdrop-blur-md">
             {category || "Haleel"}
           </span>
         </div>
 
         <div className="flex min-h-0 flex-1 flex-col px-4 pb-4">
-          <h3 className="min-h-[56px] text-lg font-serif font-semibold leading-7 tracking-wide text-[#fff8e8] line-clamp-2">
+          <h3 className="min-h-[56px] text-lg font-serif font-semibold leading-7 tracking-wide text-[#4c1d95] line-clamp-2">
             {name}
           </h3>
-          <p className="mt-1 text-2xl font-bold text-[#d7b46a]">Rs {price}</p>
+          <p className="mt-1 text-2xl font-bold text-[#f472b6]">Rs {price}</p>
 
           <button
             type="button"
             onClick={() => setShowDetails(true)}
-            className="mt-4 mb-4 h-10 w-full rounded-md border border-[#d7b46a]/20 text-xs font-semibold uppercase tracking-[0.16em] text-[#fff8e8]/80 transition hover:bg-[#d7b46a]/10 hover-lift"
+            className="mt-4 mb-4 h-10 w-full rounded-md border border-[#f472b6]/20 text-xs font-semibold uppercase tracking-[0.16em] text-[#4c1d95]/80 transition hover:bg-[#f472b6]/10 hover-lift"
           >
             Reveal Details
           </button>

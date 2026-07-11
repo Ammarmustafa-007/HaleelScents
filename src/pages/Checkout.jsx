@@ -134,14 +134,14 @@ const handleCompleteOrder = async (e) => {
   <div className="min-h-screen bg-ink text-ivory">
     {/* Top navbar for small screens */}
     <div className="lg:hidden bg-charcoal border-b border-gold/20 flex justify-between items-center px-4 py-3 shadow-md glass-panel sticky top-0 z-sticky">
-     <Link to="/" > <img src="/haleel-logo.png" alt="Logo" className="h-14 w-36 object-contain" /></Link>
+     <Link to="/" > <img src="/haleel-logo.png" alt="Logo" className="h-14 w-14 object-cover rounded-xl shadow-sm border border-[#f472b6]/20" /></Link>
       <Link
         to="/cart"
         className="relative rounded-md border border-gold/30 px-3 py-2 transition hover:bg-gold/10 hover-lift"
       >
         <IoCartOutline className="h-7 w-7 md:h-8 md:w-8 text-gold-soft" />
         {itemCount > 0 && (
-          <span className="absolute -top-2 -right-2 bg-gold text-ink text-xs font-semibold rounded-full px-1.5 py-0.5">
+          <span className="absolute -top-2 -right-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#f472b6] px-1 text-xs font-bold text-white shadow-sm">
             {itemCount}
           </span>
         )}
@@ -315,14 +315,14 @@ const handleCompleteOrder = async (e) => {
       {/* RIGHT SUMMARY SECTION */}
       <div className="flex-1 lg:w-[40%] bg-panel text-ivory shadow-lg p-6 rounded-lg mt-10 lg:mt-0 border border-gold/20">
         <div className="hidden lg:flex justify-between items-center mb-10">
-            <Link to="/" > <img src="/haleel-logo.png" alt="Logo" className="h-20 w-44 object-contain" /></Link>
+            <Link to="/" > <img src="/haleel-logo.png" alt="Logo" className="h-20 w-20 object-cover rounded-xl shadow-sm border border-[#f472b6]/20" /></Link>
           <Link
             to="/cart"
             className="relative border border-gold/30 text-gold-soft px-3 py-2 rounded-md hover:bg-gold/10 transition hover-lift"
           >
             <IoCartOutline className="h-7 w-7 md:h-8 md:w-8" />
             {itemCount > 0 && (
-              <span className="absolute -top-2 -right-2 bg-gold text-ink text-xs font-semibold rounded-full px-1.5 py-0.5">
+              <span className="absolute -top-2 -right-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#f472b6] px-1 text-xs font-bold text-white shadow-sm">
                 {itemCount}
               </span>
             )}

@@ -8,7 +8,7 @@ import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
-    <main className="min-h-screen bg-[#0b0a08] text-[#fff8e8]">
+    <main className="min-h-screen bg-[#fff0f5] text-[#4c1d95]">
       <Navbar />
       <Carousel />
       <TopSeller />
