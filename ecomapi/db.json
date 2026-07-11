@@ -1,0 +1,290 @@
+{
+  "products": [
+    {
+      "id": "3",
+      "photo": "/office.jpg",
+      "name": "Dior ispahan OUD",
+      "price": "2150",
+      "details": {
+        "gender": "MALE",
+        "occasion": "Completed",
+        "notes": "Woody , citrus , aromatic",
+        "accords": "Strong , attractive , woody"
+      },
+      "catagory": "elevate"
+    },
+    {
+      "id": "5",
+      "photo": "/office.jpg",
+      "name": "Elevate Gold",
+      "price": 3000,
+      "details": {
+        "gender": "Women",
+        "occasion": "Evening, Party",
+        "notes": "Floral, Vanilla, Musk",
+        "accords": "Sweet, Powdery, Warm"
+      },
+      "catagory": "elevate"
+    },
+    {
+      "id": "6",
+      "photo": "/office.jpg",
+      "name": "Elevate breeze",
+      "price": 3000,
+      "details": {
+        "gender": "Women",
+        "occasion": "Evening, Party",
+        "notes": "Floral, Vanilla, Musk",
+        "accords": "Sweet, Powdery, Warm"
+      },
+      "catagory": "elevate"
+    },
+    {
+      "id": "7",
+      "photo": "/office.jpg",
+      "name": "Allure Sports",
+      "price": 3000,
+      "details": {
+        "gender": "Women",
+        "occasion": "Evening, Party",
+        "notes": "Floral, Vanilla, Musk",
+        "accords": "Sweet, Powdery, Warm"
+      },
+      "catagory": "100ml"
+    },
+    {
+      "id": "1758721985720",
+      "photo": "/office.jpg",
+      "name": "Elevate Gold",
+      "price": "2600",
+      "catagory": "elevate",
+      "details": {
+        "gender": "Men ",
+        "occasion": "All Occassions",
+        "notes": "Fruity",
+        "accords": "Soft , musky , floral"
+      }
+    },
+    {
+      "id": "1758722245704",
+      "photo": "/office.jpg",
+      "name": "Gucci flora",
+      "price": "3600",
+      "catagory": "women",
+      "details": {
+        "gender": "Female",
+        "occasion": "All rounder",
+        "notes": "floral",
+        "accords": "floral"
+      }
+    },
+    {
+      "id": "1758782510245",
+      "photo": "/office.jpg",
+      "name": "Armani SI",
+      "price": "2000",
+      "catagory": "women",
+      "details": {
+        "gender": "Female",
+        "occasion": "All rounder",
+        "notes": "Woody , citrus",
+        "accords": "Soft , musky , floral"
+      }
+    },
+    {
+      "id": "1758782844789",
+      "photo": "/office.jpg",
+      "name": "ELEVATE BREEZE 💦",
+      "price": "2600",
+      "catagory": "100ml",
+      "details": {
+        "gender": "Unisex ",
+        "occasion": "All rounder ",
+        "notes": "Floral",
+        "accords": "Floral"
+      }
+    },
+    {
+      "id": "1758783735838",
+      "photo": "/office.jpg",
+      "name": "Creed Aventus",
+      "price": "4400",
+      "catagory": "100ml",
+      "details": {
+        "gender": "MALE",
+        "occasion": "All Rounder",
+        "notes": "Woody , citrus",
+        "accords": "Hard"
+      }
+    },
+    {
+      "id": "1758784635124",
+      "photo": "/office.jpg",
+      "name": "Bombshell",
+      "price": "1800",
+      "catagory": "women",
+      "details": {
+        "gender": "FEMALE",
+        "occasion": "All Rounder",
+        "notes": "Sweet , floral , Soft",
+        "accords": "Floral"
+      }
+    },
+    {
+      "id": "1758785190393",
+      "photo": "/office.jpg",
+      "name": "Gucci Envy ME",
+      "price": "2000",
+      "catagory": "women",
+      "details": {
+        "gender": "FEMALE",
+        "occasion": "All Rounder",
+        "notes": "Sweet , floral , Soft",
+        "accords": "Floral"
+      }
+    },
+    {
+      "id": "1758785322698",
+      "photo": "/office.jpg",
+      "name": "Creed aventus ",
+      "price": "2000",
+      "details": {
+        "gender": "MALE",
+        "occasion": "Formal",
+        "notes": "Special",
+        "accords": "sdfg"
+      },
+      "catagory": "men"
+    },
+    {
+      "id": "1758868466692",
+      "photo": "/office.jpg",
+      "name": "One million",
+      "price": "2200",
+      "catagory": "men",
+      "details": {
+        "gender": "MALE",
+        "occasion": "All Rounder",
+        "notes": "Woody , citrus",
+        "accords": "Soft , musky , floral"
+      }
+    },
+    {
+      "id": "1758882637850",
+      "photo": "/office.jpg",
+      "name": "LE MALE ELIXER",
+      "price": "2200",
+      "catagory": "men",
+      "details": {
+        "gender": "UNISEX",
+        "occasion": "Casual",
+        "notes": "Fruity",
+        "accords": "Floral"
+      }
+    },
+    {
+      "id": "1758893355823",
+      "photo": "/office.jpg",
+      "name": "ammar ",
+      "price": "3000",
+      "catagory": "men",
+      "details": {
+        "gender": "FEMALE",
+        "occasion": "Party wear",
+        "notes": "Fruity",
+        "accords": "Floral"
+      }
+    },
+    {
+      "id": "1758894074861",
+      "photo": "/office.jpg",
+      "name": "Elevate Goldd",
+      "price": "22222",
+      "details": {
+        "gender": "FEMALE",
+        "occasion": "Party wear",
+        "notes": "floral",
+        "accords": "floral"
+      },
+      "catagory": "elevate"
+    },
+    {
+      "id": "1758894858607",
+      "photo": "/office.jpg",
+      "name": "Armani SI",
+      "price": "3000",
+      "details": {
+        "gender": "FEMALE",
+        "occasion": "Sports",
+        "notes": "floral and woody",
+        "accords": "Hard"
+      },
+      "catagory": "men"
+    },
+    {
+      "id": "1759301996057",
+      "photo": "/office.jpg",
+      "name": "Tuscan Leather ",
+      "price": "2200",
+      "catagory": "men",
+      "details": {
+        "gender": "MALE",
+        "occasion": "Formal",
+        "notes": "Leather , woody ",
+        "accords": "Hard "
+      }
+    },
+    {
+      "id": "1759302436239",
+      "photo": "/office.jpg",
+      "name": "Ombre nomade ",
+      "price": "3500",
+      "catagory": "100ml",
+      "details": {
+        "gender": "MALE",
+        "occasion": "Casual",
+        "notes": "Wooody and amber ",
+        "accords": "Very hard "
+      }
+    },
+    {
+      "id": "1759327008281",
+      "photo": "/office.jpg",
+      "name": "Armani SI",
+      "price": "2000",
+      "catagory": "women",
+      "details": {
+        "gender": "FEMALE",
+        "occasion": "Party wear",
+        "notes": "floral",
+        "accords": "Soft , musky , floral"
+      }
+    },
+    {
+      "id": "1759995750130",
+      "photo": "/office.jpg",
+      "name": "Elevate Gold",
+      "price": "1000",
+      "catagory": "elevate",
+      "details": {
+        "gender": "MALE",
+        "occasion": "All Rounder",
+        "notes": "Fruity",
+        "accords": "Soft , musky , floral"
+      }
+    },
+    {
+      "id": "1760017635510",
+      "photo": "/office.jpg",
+      "name": "afan perfume",
+      "price": "3000",
+      "catagory": "men",
+      "details": {
+        "gender": "MALE",
+        "occasion": "All Rounder",
+        "notes": "Fruity",
+        "accords": "floral"
+      }
+    }
+  ]
+}

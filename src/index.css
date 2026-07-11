@@ -1,0 +1,306 @@
+@import "tailwindcss";
+
+:root {
+  --haleel-ink: #0b0a08;
+  --haleel-charcoal: #171410;
+  --haleel-panel: #211d17;
+  --haleel-gold: #d7b46a;
+  --haleel-gold-soft: #f4df9e;
+  --haleel-copper: #a86b3c;
+  --haleel-ivory: #fff8e8;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Space Grotesk', sans-serif;
+
+  --z-base: 0;
+  --z-elevated: 10;
+  --z-sticky: 999;
+  --z-dropdown: 1000;
+  --z-modal-backdrop: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-gold: 0 16px 36px rgba(215, 180, 106, 0.24);
+}
+
+html {
+  background: var(--haleel-ink);
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  color: var(--haleel-ivory);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(215, 180, 106, 0.14), transparent 34rem),
+    radial-gradient(circle at 82% 12%, rgba(168, 107, 60, 0.12), transparent 30rem),
+    linear-gradient(135deg, #0b0a08 0%, #171410 45%, #28231d 100%);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.26;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+::selection {
+  color: #0b0a08;
+  background: var(--haleel-gold);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes goldPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(215, 180, 106, 0.25));
+  }
+  45% {
+    transform: scale(1.075);
+    filter: drop-shadow(0 0 24px rgba(215, 180, 106, 0.7));
+  }
+}
+
+@keyframes softOrbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.haleel-loader-wrap {
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: var(--haleel-gold-soft);
+  overflow: hidden;
+}
+
+.haleel-loader-aura {
+  position: absolute;
+  width: 184px;
+  height: 184px;
+  border-radius: 999px;
+  border: 1px solid rgba(215, 180, 106, 0.35);
+  background:
+    conic-gradient(from 90deg, transparent, rgba(215, 180, 106, 0.5), transparent 42%),
+    radial-gradient(circle, rgba(215, 180, 106, 0.12), transparent 60%);
+  animation: softOrbit 2.4s linear infinite;
+}
+
+.haleel-loader-mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 132px;
+  height: 132px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #171410;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(215, 180, 106, 0.3);
+  animation: goldPulse 1.18s ease-in-out infinite;
+}
+
+.haleel-loader-mark img {
+  width: 168%;
+  height: 168%;
+  object-fit: cover;
+  object-position: center;
+  transform: translateY(2px);
+}
+
+.haleel-loader-wrap p {
+  position: relative;
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.haleel-surface {
+  background:
+    linear-gradient(145deg, rgba(255, 248, 232, 0.08), rgba(255, 248, 232, 0.025)),
+    rgba(19, 17, 14, 0.86);
+  border: 1px solid rgba(215, 180, 106, 0.18);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(18px);
+}
+
+.haleel-gold-text {
+  color: var(--haleel-gold);
+}
+
+.haleel-gold-button {
+  color: #130f08;
+  background: linear-gradient(135deg, #f7e7ad 0%, #d7b46a 48%, #a86b3c 100%);
+  box-shadow: 0 16px 36px rgba(215, 180, 106, 0.24);
+}
+
+.haleel-gold-button:hover {
+  filter: brightness(1.07);
+}
+
+.scent-toast-shell {
+  width: min(92vw, 390px);
+  padding: 0 !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+.scent-toast-body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.Toastify__toast-container {
+  width: min(92vw, 410px) !important;
+}
+
+.Toastify__toast {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin-bottom: 14px !important;
+}
+
+.notification-progress {
+  width: 100%;
+  transform-origin: left;
+  animation: notification-progress 3.2s linear forwards;
+}
+
+@keyframes notification-progress {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+
+.haleel-loader-fullscreen {
+  min-height: 100vh;
+}
+
+.haleel-logo-orb {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  background: #171410;
+  border: 1px solid rgba(215, 180, 106, 0.32);
+  box-shadow: 0 0 34px rgba(215, 180, 106, 0.16);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.haleel-logo-orb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.35);
+}
+
+.group:hover .haleel-logo-orb {
+  border-color: rgba(244, 223, 158, 0.55);
+  transform: scale(1.05);
+}
+
+/* Animation & UX Utilities */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+}
+.hover-lift-img {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-lift:hover .hover-lift-img {
+  transform: scale(1.05);
+}
+
+@keyframes pulse-skeleton {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+.skeleton-box {
+  animation: pulse-skeleton 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  background-color: var(--haleel-panel);
+  border-radius: var(--radius-md);
+}
+
+.cart-bump {
+  animation: cartBump 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes cartBump {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2) rotate(10deg); }
+  100% { transform: scale(1); }
+}
+
+.glass-panel {
+  background: rgba(23, 20, 16, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(215, 180, 106, 0.1);
+}

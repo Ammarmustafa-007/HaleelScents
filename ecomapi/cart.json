@@ -1,0 +1,150 @@
+{
+  "carts": [
+    {
+      "id": "1adfa411-42c1-4307-88f4-821a5fb7ac87",
+      "deviceId": "9acab6a1-47e7-4173-a6c9-8bfa59ef5500",
+      "userId": null,
+      "items": [
+        {
+          "productId": "1758785322698",
+          "name": "Creed aventus ",
+          "price": 2000,
+          "photo": "/office.jpg",
+          "quantity": 2
+        },
+        {
+          "productId": "1758868466692",
+          "name": "One million",
+          "price": 2200,
+          "photo": "/office.jpg",
+          "quantity": 1
+        },
+        {
+          "productId": "1758882637850",
+          "name": "LE MALE ELIXER",
+          "price": 2200,
+          "photo": "/office.jpg",
+          "quantity": 1
+        },
+        {
+          "productId": "1760017635510",
+          "name": "afan perfume",
+          "price": 3000,
+          "photo": "/office.jpg",
+          "quantity": 1
+        },
+        {
+          "productId": "5",
+          "name": "Elevate Gold",
+          "price": 3000,
+          "photo": "/office.jpg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "6f3c8035-29eb-4805-97fe-f1e182bd0bb7",
+      "deviceId": "9acab6a1-47e7-4173-a6c9-8bfa59ef5500",
+      "userId": null,
+      "items": [
+        {
+          "productId": "1758785322698",
+          "name": "Creed aventus ",
+          "price": 2000,
+          "photo": "/office.jpg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "69c0e2a8-b21b-4b33-843d-c59534c61eb0",
+      "deviceId": "73b25781-b9e6-4c25-91f1-db489f433ce4",
+      "userId": null,
+      "items": [
+        {
+          "productId": "1758785322698",
+          "name": "Creed aventus ",
+          "price": 2000,
+          "photo": "/office.jpg",
+          "quantity": 1
+        },
+        {
+          "productId": "1758868466692",
+          "name": "One million",
+          "price": 2200,
+          "photo": "/office.jpg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "a9b6bbb9-41ae-4536-9480-8f199e807289",
+      "deviceId": "9acab6a1-47e7-4173-a6c9-8bfa59ef5500",
+      "userId": null,
+      "items": [
+        {
+          "productId": "1758722245704",
+          "name": "Gucci flora",
+          "price": 3600,
+          "photo": "/office.jpg",
+          "quantity": 1
+        },
+        {
+          "productId": "1758782510245",
+          "name": "Armani SI",
+          "price": 2000,
+          "photo": "/office.jpg",
+          "quantity": 1
+        },
+        {
+          "productId": "1758784635124",
+          "name": "Bombshell",
+          "price": 1800,
+          "photo": "/office.jpg",
+          "quantity": 1
+        },
+        {
+          "productId": "1758785190393",
+          "name": "Gucci Envy ME",
+          "price": 2000,
+          "photo": "/office.jpg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "4c7d7bab-3f91-4358-99d3-e6daced43706",
+      "deviceId": "53e74d0b-ef66-4701-80a4-e3889c3f143f",
+      "userId": null,
+      "items": []
+    },
+    {
+      "id": "4b444b31-04c4-4f57-ba03-a506a00037ff",
+      "deviceId": "80c052f2-3db0-4979-ae51-c3013669ccb2",
+      "userId": null,
+      "items": [
+        {
+          "productId": "3",
+          "name": "Dior ispahan OUD",
+          "price": 2150,
+          "photo": "/office.jpg",
+          "quantity": 1
+        },
+        {
+          "productId": "5",
+          "name": "Elevate Gold",
+          "price": 3000,
+          "photo": "/office.jpg",
+          "quantity": 1
+        },
+        {
+          "productId": "6",
+          "name": "Elevate breeze",
+          "price": 3000,
+          "photo": "/office.jpg",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}

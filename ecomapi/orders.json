@@ -1,0 +1,97 @@
+{
+  "orders": [
+    {
+      "id": "e91b",
+      "order id": 1760450785863,
+      "Email": "amsubscriptions008@gmail.com",
+      "delivery": {
+        "country": "Pakistan",
+        "firstname": "Ammar",
+        "lastname": "Mustafa",
+        "address": "123 garden town lhr",
+        "city": "Lahore",
+        "postalcode": "54770",
+        "phone": "03306381984",
+        "whatsapp": "03306381984"
+      },
+      "Shipping method": {
+        "Standard delivery": "Rs 250.00",
+        "Bank Transfer": "easypaisa"
+      },
+      "payment": {
+        "cash On Delivery": "",
+        "Bank Transfer": "Easypaisa / JazzCash"
+      },
+      "orderDetails": {
+        "products": [
+          {
+            "name": "Gucci flora",
+            "price": 3600,
+            "quantity": 1
+          },
+          {
+            "name": "Armani SI",
+            "price": 2000,
+            "quantity": 1
+          },
+          {
+            "name": "Bombshell",
+            "price": 1800,
+            "quantity": 1
+          },
+          {
+            "name": "Gucci Envy ME",
+            "price": 2000,
+            "quantity": 1
+          }
+        ]
+      },
+      "COMPLETE TOTAL": 9650,
+      "createdAt": "2025-10-14T14:06:25.863Z"
+    },
+    {
+      "id": "7c1f",
+      "order id": 1762415555618,
+      "Email": "buddyammar123@gmail.com",
+      "delivery": {
+        "country": "Pakistan",
+        "firstname": "Babab",
+        "lastname": "Shgag",
+        "address": "Sggasgag",
+        "city": "Shahsha",
+        "postalcode": "00000",
+        "phone": "03306381984",
+        "whatsapp": "03306381984"
+      },
+      "Shipping method": {
+        "Standard delivery": "Rs 250.00",
+        "Bank Transfer": "easypaisa"
+      },
+      "payment": {
+        "cash On Delivery": "COD",
+        "Bank Transfer": ""
+      },
+      "orderDetails": {
+        "products": [
+          {
+            "name": "Dior ispahan OUD",
+            "price": 2150,
+            "quantity": 1
+          },
+          {
+            "name": "Elevate Gold",
+            "price": 3000,
+            "quantity": 1
+          },
+          {
+            "name": "Elevate breeze",
+            "price": 3000,
+            "quantity": 1
+          }
+        ]
+      },
+      "COMPLETE TOTAL": 8400,
+      "createdAt": "2025-11-06T07:52:35.618Z"
+    }
+  ]
+}
