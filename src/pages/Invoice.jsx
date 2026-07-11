@@ -62,7 +62,7 @@ export const Invoice = () => {
         </div>
 
         {/* Order Details */}
-        <div className="text-sm sm:text-base">
+        <div className="text-sm sm:text-base text-gray-800">
           <h2 className="text-lg font-semibold text-gray-800 mb-2">Order Details</h2>
           <table className="w-full border-collapse">
             <thead>
