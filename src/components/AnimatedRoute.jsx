@@ -19,6 +19,8 @@ export const AnimatedRoute = ({ children }) => {
       className="w-full h-full min-h-screen flex flex-col"
     >
       {children}
+
+      {/* commit example */}
     </motion.div>
   );
 };
